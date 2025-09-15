@@ -88,6 +88,7 @@ START: Theme Default CSS
   --tj-color-text-body-2: #a9b8b8;
   --tj-color-text-body-3: #67787a;
   --tj-color-text-body-4: #18292c;
+  --tj-color-text-body-5: #ffffff;
   /* --tj-color-theme-primary: #1e8a8a; */
   --tj-color-theme-primary: #af4b44;
   --tj-color-theme-bg: #d8e5e5;
@@ -112,7 +113,7 @@ START: Theme Default CSS
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-   /* border:1px solid red; */
+  /* border:1px solid red; */
 }
 
 .site-main,
@@ -1193,9 +1194,7 @@ START: Theme Header CSS
   display: inline-block;
   max-width: 140px;
   width: 100%;
-
 }
-
 
 .menu-area {
   gap: 25px;
@@ -11143,7 +11142,7 @@ START: Theme Slider CSS
 }
 .tj-slider-item .slider-content .slider-title {
   color: var(--tj-color-common-white);
-  font-size: 96px;
+  font-size: 56px;
   line-height: 1.042;
   letter-spacing: -2.88px;
   margin-bottom: 10px;
@@ -11196,11 +11195,18 @@ START: Theme Slider CSS
     font-size: 50px;
   }
 }
+.tj-slider-item .slider-content .slider-tagline {
+  max-width: 440px;
+  font-size: 24px;
+  line-height: 1.444;
+  color: var(--tj-color-theme-primary);
+}
+
 .tj-slider-item .slider-content .slider-desc {
   max-width: 440px;
   font-size: 18px;
   line-height: 1.444;
-  color: var(--tj-color-text-body-2);
+  color: var(--tj-color-text-body-5);
 }
 .tj-slider-item .slider-content .slider-btn {
   margin-top: 25px;
@@ -11252,6 +11258,7 @@ START: Theme Slider CSS
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
+
 .swiper-slide.swiper-slide-active .slider-content .slider-title {
   -webkit-transition-delay: 1s;
   transition-delay: 1s;
@@ -20244,7 +20251,7 @@ START: Service CSS
   }
 }
 .h7-service-item {
-  padding: 35px 30px;
+  padding: 15px 10px;
   border-radius: 8px;
 }
 .h7-service-item:not(:last-child) {
@@ -22596,4 +22603,3 @@ START: Choose CSS
 }
 
 /* !END: Choose CSS */ /*# sourceMappingURL=main.css.map */
-
