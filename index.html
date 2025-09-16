@@ -216,7 +216,7 @@
                     <ul class="sub-menu">
                       <li><a href="about.html">About Us</a></li>
                       <li><a href="team.html">Our Team</a></li>
-                      <li><a href="team-details.html">Customer</a></li>
+                      <li><a href="team-details.html">Customers</a></li>
                       <li><a href="faq.html">Career</a></li>
                       <li><a href="pricing.html">Life @ ZNZ</a></li>
                       <li><a href="error.html">News & Events</a></li>
@@ -310,32 +310,34 @@
             <div class="menu-area d-none d-lg-inline-flex align-items-center" style="flex: 0 0 200px; max-width: 300px;">
               <nav class="mainmenu">
                 <ul>
-                  <li class=" current-menu-ancestor"><a href="index.html">Home</a>
-                    
+                  <li class=" current-menu-ancestor">
+                     <li ><a href="index.html">Home</a>
                   </li>
+                   <li ><a href="service.html">Services</a>
                   <li class="has-dropdown"><a href="portfolio.html">Products</a>
                     <ul class="sub-menu">
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                      <li><a href="portfolio.html">LYFE</a></li>
+                      <li><a href="portfolio-details.html">Geo Attend</a></li>
+
                     </ul>
                   </li>
-                    <li class="has-dropdown"><a href="service.html">Services</a>
-                    <ul class="sub-menu">
-                      <li><a href="service.html">Services</a></li>
-                      <li><a href="service-details.html">Services Details</a></li>
-                    </ul>
                   </li>
-                  <li class="has-dropdown"><a href="about.html">Company</a>
+                    <li class="has-dropdown"><a href="about.html">Company</a>
                     <ul class="sub-menu">
                       <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-details.html">Team Details</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="pricing.html">Pricing Page</a></li>
-                      <li><a href="error.html">Error 404</a></li>
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="team-details.html">Customers</a></li>
+                      <li><a href="faq.html">Career</a></li>
+                      <li><a href="pricing.html">Life @ ZNZ</a></li>
+                      <li><a href="error.html">News & Events</a></li>
                     </ul>
                   </li>
-      
+                  <!-- <li class="has-dropdown"><a href="blog.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                  </li> -->
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
@@ -410,7 +412,25 @@
       <div class="swiper hero-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide tj-slider-item">
-            <div class="slider-bg-image" data-bg-image="assets/images/hero/slider-1.webp"></div>
+            <div class="slider-bg-image" data-bg-image="assets/images/hero/location-service.jpg"></div>
+            <div class="container">
+              <div class="slider-wrapper">
+                <div class="slider-content">
+                  <div class="slider-tagline"> Location-Based Services (LBS)</div>
+                  <h1 class="slider-title">Next-Gen Location Intelligence for  <span>Smarter Operations</span></h1>
+                  <div class="slider-desc">Monitor, manage, and optimize your field workforce with real-time location insights powered by smart geospatial technology.</div>
+                  <div class="slider-btn">
+                    <a class="tj-primary-btn" href="contact.html">
+                      <span class="btn-text"><span>Get Started</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide tj-slider-item">
+            <div class="slider-bg-image" data-bg-image="assets/images/hero/iot-service.jpg"></div>
             <div class="container">
               <div class="slider-wrapper">
                 <div class="slider-content">
@@ -427,26 +447,9 @@
               </div>
             </div>
           </div>
+          
           <div class="swiper-slide tj-slider-item">
-            <div class="slider-bg-image" data-bg-image="assets/images/hero/slider-2.webp"></div>
-            <div class="container">
-              <div class="slider-wrapper">
-                <div class="slider-content">
-                  <div class="slider-tagline"> Location-Based Services (LBS)</div>
-                  <h1 class="slider-title">Next-Gen Location Intelligence for  <span>Smarter Operations</span></h1>
-                  <div class="slider-desc">Track, manage, and optimize your field workforce with real-time location insights powered by smart geospatial technology.</div>
-                  <div class="slider-btn">
-                    <a class="tj-primary-btn" href="contact.html">
-                      <span class="btn-text"><span>Get Started</span></span>
-                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide tj-slider-item">
-            <div class="slider-bg-image" data-bg-image="assets/images/hero/slider-3.webp"></div>
+            <div class="slider-bg-image" data-bg-image="assets/images/hero/custom-software.jpg"></div>
             <div class="container">
               <div class="slider-wrapper">
                 <div class="slider-content">
@@ -481,10 +484,10 @@
         </div>
       </div>
    
-      <div class="circle-text-wrap wow fadeInUp" data-wow-delay="2.2s">
+      <!-- <div class="circle-text-wrap wow fadeInUp" data-wow-delay="2.2s">
         <span class="circle-text" data-bg-image="assets/images/hero/circle-text.webp"></span>
         <a class="circle-icon" href="service.html"><i class="tji-arrow-down-big"></i></a>
-      </div>
+      </div> -->
     </section>
     <!-- end 1: Banner Slider -->
 
@@ -561,8 +564,8 @@
                     <span class="quote-icon"><i class="tji-quote"></i></span>
                   </div>
                 </div>
-                <div class="video-img wow fadeInUp" data-wow-delay=".9s">
-                  <img style="padding: 20px;" src="assets/images/fav.png" alt="" />
+                <div class="video-img wow fadeInUp bg-light" data-wow-delay=".9s">
+                  <img style="padding: 20px;" src="assets/images/logos/Logo.jpg" alt="" />
                  
                 </div>
               </div>
@@ -573,17 +576,17 @@
       <!-- end: About Section -->
 
     <!-- start: Faq Section -->
-    <section class="tj-faq-section section-gap" style="margin-top: -200px;">
+    <section class="tj-faq-section section-gap" style="margin-top: -100px;">
       <div class="container">
          <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-8 mx-auto" >
             <div class="sec-heading style-2 style-7">
               <div class="row">
                 <div class="col-12 col-lg-4 col-xl-12"></div>
                 <div class="col-12 col-lg-12 col-xl-12">
                   <div class="sec-title-wrapper">
-                    <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span>
-                    <h2 class="sec-title text-anim">Tailor Business Solutions for Corporates.</h2>
+                    <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Services</span>
+                    <h2 class="sec-title text-anim">Empowering Business Through Technology</h2>
                   </div>
 
                 </div>
@@ -592,10 +595,10 @@
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-lg-6">
-            <div class="faq-img-area wow fadeInLeft" data-wow-delay=".3s">
-              <div class="faq-img">
-                <img src="assets/images/service/all-services.png" alt="">
+          <div class="col-lg-6 " >
+            <div  class="faq-img-area wow fadeInLeft" data-wow-delay=".3s">
+              <div class="faq-img" style="width: 90%; height: 80%;">
+                <img  src="assets/images/service/all-services.jpg" alt="">
                
               </div>
             
@@ -604,7 +607,7 @@
           <div class="col-lg-6">
             <div class="accordion tj-faq style-2" id="faqTwo">
               <div class="accordion-item active wow fadeInUp" data-wow-delay=".3s">
-                <button class=" faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-1"
+                <button class="faq-title" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-1"
                   aria-expanded="true">LBS Services</button>
                 <div id="faqTwo-1" class="collapse show" data-bs-parent="#faqTwo">
                   <div class="accordion-body faq-text">
@@ -648,30 +651,8 @@
                 </div>
               </div>
               <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-4"
-                  aria-expanded="false">Reverse Geocoding</button>
-                <div id="faqTwo-4" class="collapse" data-bs-parent="#faqTwo">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
-                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-4"
-                  aria-expanded="false">IOT Custom Solutions</button>
-                <div id="faqTwo-4" class="collapse" data-bs-parent="#faqTwo">
-                  <div class="accordion-body faq-text">
-                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
-                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
-                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
                 <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-5"
-                  aria-expanded="false">Can I track the progress of my project?</button>
+                  aria-expanded="false">Software Development & Solution</button>
                 <div id="faqTwo-5" class="collapse" data-bs-parent="#faqTwo">
                   <div class="accordion-body faq-text">
                     <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
@@ -680,6 +661,29 @@
                   </div>
                 </div>
               </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-6"
+                  aria-expanded="false">Reverse Geocoding</button>
+                <div id="faqTwo-6" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item wow fadeInUp" data-wow-delay=".3s">
+                <button class="faq-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo-7"
+                  aria-expanded="false">IOT Custom Solutions</button>
+                <div id="faqTwo-7" class="collapse" data-bs-parent="#faqTwo">
+                  <div class="accordion-body faq-text">
+                    <p>Getting started is easy! Simply reach out to us through our contact form or give us a call, and
+                      we’ll schedule a consultation to discuss your project and how we can best assist you. Our team
+                      keeps you informed throughout the process, ensuring quality control and timely delivery.</p>
+                  </div>
+                </div>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -690,93 +694,62 @@
 
     
 
-    <!-- start 4: Service Section -->
-    <section class="tj-service-section service-2 section-gap section-gap-x">
+    <!-- start: About Section -->
+    <section class="tj-about-section h6-about section-gap section-gap-x">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="content-wrap sticky-lg-top">
-              <div class="sec-heading style-2">
-                <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Solutions</span>
-                <h2 class="sec-title text-white text-anim">Tailored Business Solutions for our <span>Corporates.</span>
+          <div class="col-xl-6 col-lg-6">
+            <div class="about-content-area  h6-about-content  style-1 wow fadeInLeft" data-wow-delay=".2s">
+              <div class="sec-heading style-2 style-6">
+                <span class="sub-title  wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Location-Based Services (LBS)</span>
+                <h2 class="sec-title title-anim">Smart Location Solutions Driving Business Growth and Efficiency.
                 </h2>
+                <p class="desc  wow fadeInUp" data-wow-delay=".8s">Zedandzed IT Services Ltd. delivers advanced Location-Based Services to help businesses track, manage, and optimize operations in real-time. From workforce monitoring to intelligent geocoding, our LBS solutions ensure transparency, efficiency, and growth across industries.</p>
               </div>
-              <div class="wow fadeInUp" data-wow-delay=".6s">
-                <a class="tj-primary-btn" href="service.html">
-                  <span class="btn-text"><span>More Services</span></span>
+              <div class="h6-about-funfact-wrapper">
+                <div class="h6-about-funfact">
+                 <div class="service-content">
+                  <p style="font-size: 18px; color: white;" >Our LBS Solutions</p>
+                  <ul class="list-items" >
+                    <li style="color: #a9b8b8 ;"><i class="tji-list"></i>LYFE – Smart workforce monitoring & business insights</li>
+                    <li style="color: #a9b8b8 ;"><i class="tji-list"></i>GeoAttend - Real-time attendance & field force management</li>
+                    <li style="color: #a9b8b8 ;"><i class="tji-list"></i>Reverse Geocoding - Accurate address mapping from GPS coordinates</li>
+                    <li style="color: #a9b8b8 ;"><i class="tji-list"></i>Location Data - Actionable analytics for smarter decision-making</li>
+                  </ul>
+                </div>
+
+                </div>
+                <div class="h6-about-funfact-shape">
+                  <img src="assets/images/shape/about-counter-shape-blur.svg" alt="">
+                </div>
+              </div>
+
+              <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
+                <a class="tj-primary-btn" href="contact.html">
+                  <span class="btn-text"><span>Know More Us</span></span>
                   <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                 </a>
               </div>
             </div>
+
           </div>
-          <div class="col-lg-6">
-            <div class="service-wrapper-2">
-              <div class="service-item style-2 wow fadeInUp" data-wow-delay=".1s">
-                <div class="title-area">
-                  <div class="service-icon">
-                    <i class="tji-service-1"></i>
-                  </div>
-                  <h4 class="title"><a href="service-details.html">Business Strategy Development</a></h4>
-                </div>
-                <div class="service-content">
-                  <p class="desc">Through a combination of data-driven insights and innovative approaches, we work
-                    closely with you to develop customized.</p>
-                  <ul class="list-items">
-                    <li><i class="tji-list"></i>Expansion Strategies</li>
-                    <li><i class="tji-list"></i>Operational Efficiency</li>
-                    <li><i class="tji-list"></i>Competitive Edge</li>
-                  </ul>
-                </div>
+          <div class="col-xl-6 col-lg-6">
+            <div class="about-img-area h6-about-img wow fadeInLeft" data-wow-delay=".2s">
+              <div class="about-img  wow fadeInRight" data-wow-delay=".8s">
+                <img src="assets/images/service/location-service.jpg" alt="">
               </div>
-              <div class="service-item style-2 wow fadeInUp" data-wow-delay=".3s">
-                <div class="title-area">
-                  <div class="service-icon">
-                    <i class="tji-service-2"></i>
+              <div class="box-area h6-about-box  ">
+                <div class="customers-box wow fadeInUp" data-wow-delay="1s">
+                  <div class="customers">
+                    <ul>
+                      <li class="wow fadeInLeft" data-wow-delay=".5s"><img src="assets/images/testimonial/client-1.webp" alt=""></li>
+                      <li class="wow fadeInLeft" data-wow-delay=".6s"><img src="assets/images/testimonial/client-2.webp" alt=""></li>
+                      <li class="wow fadeInLeft" data-wow-delay=".7s"><img src="assets/images/testimonial/client-3.webp" alt=""></li>
+                      <li class="wow fadeInLeft" data-wow-delay=".8s"><span><i class="tji-plus"></i></span></li>
+                    </ul>
                   </div>
-                  <h4 class="title"><a href="service-details.html">Customer Experience Solutions</a></h4>
-                </div>
-                <div class="service-content">
-                  <p class="desc">Developing personalized customer journeys to increase satisfaction and loyalty
-                    of our expansion to keep competitive.</p>
-                  <ul class="list-items">
-                    <li><i class="tji-list"></i>Personalized Customer</li>
-                    <li><i class="tji-list"></i>Seamless Service</li>
-                    <li><i class="tji-list"></i>Proactive Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="service-item style-2 wow fadeInUp" data-wow-delay=".5s">
-                <div class="title-area">
-                  <div class="service-icon">
-                    <i class="tji-service-3"></i>
-                  </div>
-                  <h4 class="title"><a href="service-details.html">Sustainability and ESG Consulting</a></h4>
-                </div>
-                <div class="service-content">
-                  <p class="desc">Provide tailored strategies that not only drive long-term value but also build
-                    trust with stakeholders, investors.</p>
-                  <ul class="list-items">
-                    <li><i class="tji-list"></i>Strategy Development</li>
-                    <li><i class="tji-list"></i>Sustainable Business</li>
-                    <li><i class="tji-list"></i>Impactful Reporting</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="service-item style-2 wow fadeInUp" data-wow-delay=".7s">
-                <div class="title-area">
-                  <div class="service-icon">
-                    <i class="tji-service-4"></i>
-                  </div>
-                  <h4 class="title"><a href="service-details.html">Training and Development Programs</a></h4>
-                </div>
-                <div class="service-content">
-                  <p class="desc">Training and Development Programs are designed to empower employees with the
-                    skills, knowledge, and tools they need.</p>
-                  <ul class="list-items">
-                    <li><i class="tji-list"></i>Leadership Development</li>
-                    <li><i class="tji-list"></i>Skill Enhancement</li>
-                    <li><i class="tji-list"></i>Employee Engagement</li>
-                  </ul>
+
+                  <h5 class="customers-text wow fadeInUp" data-wow-delay=".5s">We have 100+ happy customer.</h5>
                 </div>
               </div>
             </div>
@@ -792,8 +765,9 @@
       <div class="bg-shape-3">
         <img src="assets/images/shape/shape-blur.svg" alt="">
       </div>
+
     </section>
-    <!-- end 4: Service Section -->
+    <!-- end: About Section -->
 
     <!-- start 5: Client Section -->
     <section class="tj-client-section client-section-gap wow fadeInUp" data-wow-delay=".4s">
@@ -992,373 +966,187 @@
     </section>
     <!-- end 7: Choose Section -->
 
-        <!-- start 8: Project Section -->
-    <section class="h6-project section-gap section-gap-x">
+    <!-- start: Cta Section -->
+    <section class="tj-cta-section">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="heading-wrap-content">
-              <div class="sec-heading style-2 style-6">
-                <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Proud Projects</span>
-                <h2 class="sec-title title-anim">Breaking Boundaries, Building Dreams.</h2>
+            <div class="cta-area">
+              <div class="cta-content">
+                <h2 class="title title-anim">Your Vision, Our Solution.</h2>
+                <div class="cta-btn wow fadeInUp" data-wow-delay=".6s">
+                  <a class="tj-primary-btn btn-dark" href="contact.html">
+                    <span class="btn-text"><span>Get Started Now</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                  </a>
+                </div>
               </div>
-              <div class="btn-area wow fadeInUp" data-wow-delay=".8s">
-                <a class="tj-primary-btn" href="portfolio.html">
-                  <span class="btn-text"><span>More Projects</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
+              <div class="cta-img">
+                <img src="assets/images/cta/cta-bg.webp" alt="">
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="h6-project-inner wow fadeInUp" data-wow-delay="0.6s">
-              <div class=" project-item h6-project-item ">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-1.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Connect</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Event Management Platform</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class=" project-item h6-project-item ">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-2.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Empower</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Digital Marketing Campaign</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class=" project-item h6-project-item active">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-3.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Support</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Interactive Learning Platform</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class=" project-item h6-project-item ">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-4.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Environmental Impact Dashboard</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class=" project-item h6-project-item ">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-5.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Connect</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Event Management Platform</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class=" project-item h6-project-item ">
-                <div class="project-item-inner h6-project-item-inner" data-bg-image="./assets/images/project/h6-project-6.webp">
-                  <div class="project-content">
-                    <span class="categories"><a href="portfolio-details.html">Empower</a></span>
-                    <div class="project-text">
-                      <h3 class="title"><a href="portfolio-details.html">Digital Marketing Campaign</a></h3>
-                      <a class="project-btn" href="portfolio-details.html">
-                        <i class="tji-arrow-right-long"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-shape-1">
-        <img src="assets/images/shape/pattern-2.svg" alt="">
-      </div>
-      <div class="bg-shape-2">
-        <img src="assets/images/shape/pattern-3.svg" alt="">
-      </div>
-      <div class="bg-shape-3">
-        <img src="assets/images/shape/shape-blur.svg" alt="">
       </div>
     </section>
-    <!-- end 8: Project Section -->
-
-        <!-- start 9: Testimonial Section -->
-    <section class="tj-testimonial-section h7-testimonial section-gap section-gap-x">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-12">
-            <div class="sec-heading style-2 style-7 sec-heading-centered">
-              <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i> CLIENT FEEDBACK</span>
-              <h2 class="sec-title text-anim">Our Clients Share Their Success Stories.</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="testimonial-wrapper  h7-testimonial-wrapper  wow fadeInRightBig" data-wow-delay=".3s">
-              <div class="swiper swiper-container testimonial-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-1.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Guy Hawkins</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="desc">
-                        <p>We’ve been working with us for years & they continue to deliver outstanding results. Their
-                          team is proactive, responsive, and always goes the extra mile to ensure our needs are met.</p>
-                      </div>
-                      <div class="star-ratings">
-                        <div class="fill-ratings" style="width: 100%">
-                          <span>★★★★★</span>
-                        </div>
-                        <div class="empty-ratings">
-                          <span>★★★★★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-2.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Ralph Edwards</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="desc">
-                        <p>Working with Bexon has been a game-changer for our business. Their team's professionalism,
-                          attention to detail, and innovative solutions have helped us streamline operations
-                        </p>
-                      </div>
-                      <div class="star-ratings">
-                        <div class="fill-ratings" style="width: 100%">
-                          <span>★★★★★</span>
-                        </div>
-                        <div class="empty-ratings">
-                          <span>★★★★★</span>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="testimonial-author">
-                        <div class="author-inner">
-                          <div class="author-img">
-                            <img src="assets/images/testimonial/client-3.webp" alt="">
-                          </div>
-                          <div class="author-header">
-                            <h4 class="title">Devon Lane</h4>
-                            <span class="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="desc">
-                        <p>The results we’ve seen after partnering with Bexon are beyond our expectations. They not only
-                          understood our vision but also brought new ideas to the table that have taken our business
-                        </p>
-                      </div>
-                      <div class="star-ratings">
-                        <div class="fill-ratings" style="width: 100%">
-                          <span>★★★★★</span>
-                        </div>
-                        <div class="empty-ratings">
-                          <span>★★★★★</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination-area"></div>
-              </div>
-              <div class="slider-prev">
-                <span class="anim-icon">
-                  <i class="tji-arrow-left"></i>
-                  <i class="tji-arrow-left"></i>
-                </span>
-              </div>
-              <div class="slider-next">
-                <span class="anim-icon">
-                  <i class="tji-arrow-right"></i>
-                  <i class="tji-arrow-right"></i>
-                </span>
-              </div>
-              <div class="bg-shape-3">
-                <img src="assets/images/shape/h7-testimonial-shape-blur.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-shape-1">
-        <img src="assets/images/shape/pattern-2.svg" alt="">
-      </div>
-      <div class="bg-shape-2">
-        <img src="assets/images/shape/pattern-3.svg" alt="">
-      </div>
-    </section>
-    <!-- end 9: Testimonial Section -->
-  
+    <!-- end: Cta Section -->
+  </main>
   <!-- start: Footer Section -->
-  <footer class="tj-footer-section footer-1 h7-footer section-gap-x">
-    <div class="footer-main-area  h7-footer-main">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="footer-widget wow fadeInUp" data-wow-delay=".1s">
-              <div class="footer-logo">
-                <a href="index.html">
-                  <img  src="assets/images/logos/logo.webp"  alt="Logos">
-                </a>
-              </div>
-              <div class="footer-text">
-                <p>Developing personalze our customer journeys to increase satisfaction & loyalty of our expansion.
-                </p>
-              </div>
-              <div class="award-logo-area">
-                <div class="award-logo">
-                  <img src="assets/images/footer/award-logo-1.webp" alt="">
+  <!-- start: Footer Section -->
+    <footer class="tj-footer-section footer-1 section-gap-x">
+      <div class="footer-main-area">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".1s">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img src="assets/images/logos/logo.webp" alt="Logos" />
+                  </a>
                 </div>
-                <div class="award-logo">
-                  <img src="assets/images/footer/award-logo-2.webp" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="footer-widget widget-nav-menu wow fadeInUp" data-wow-delay=".3s">
-              <h5 class="title">Services</h5>
-              <ul>
-                <li><a href="#">Customer Experience</a></li>
-                <li><a href="#">Training Programs</a></li>
-                <li><a href="#">Business Strategy</a></li>
-                <li><a href="#">Training Program</a></li>
-                <li><a href="#">ESG Consulting</a></li>
-                <li><a href="#">Development Hub</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="footer-widget widget-nav-menu wow fadeInUp" data-wow-delay=".5s">
-              <h5 class="title">Resources</h5>
-              <ul>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Team Member</a></li>
-                <li><a href="#">Recognitions</a></li>
-                <li><a href="#">Careers <span class="badge">New</span></a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Feedback</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
-            <div class="footer-widget widget-subscribe wow fadeInUp" data-wow-delay=".7s">
-              <h3 class="title">Subscribe to Our Newsletter.</h3>
-              <div class="subscribe-form">
-                <form action="#">
-                  <input type="email" name="email" placeholder="Enter email">
-                  <button type="submit"><i class="tji-plane"></i></button>
-                  <label for="agree"><input id="agree" type="checkbox">Agree to our <a href="#">Terms &
-                      Condition?</a></label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tj-copyright-area h7-footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="copyright-content-area">
-              <div class="footer-contact">
-                <ul>
-                  <li>
-                    <a href="tel:10095447818">
-                      <span class="icon"><i class="tji-phone-2"></i></span>
-                      <span class="text">+1 (009) 544-7818</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@bexon.com">
-                      <span class="icon"><i class="tji-envelop-2"></i></span>
-                      <span class="text">info@zedandzed.com</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-links">
-                <ul>
-                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li><a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                  <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="copyright-text">
-                  <p>&copy; <span id="currentYear"></span> 
-                   <a href="https://themeforest.net/user/theme-junction/portfolio" target="_blank">Zedandzed IT Services Ltd.</a>
-                    All rights reserved
+                <div class="footer-text">
+                  <p>
+                    Developing personalze our customer journeys to increase
+                    satisfaction & loyalty of our expansion.
                   </p>
+                </div>
+                <div class="award-logo-area">
+                  <div class="award-logo">
+                    <img src="assets/images/footer/award-logo-1.webp" alt="" />
+                  </div>
+                  <div class="award-logo">
+                    <img src="assets/images/footer/award-logo-2.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div
+                class="footer-widget widget-nav-menu wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <h5 class="title">Services</h5>
+                <ul>
+                  <li><a href="#">Customer Experience</a></li>
+                  <li><a href="#">Training Programs</a></li>
+                  <li><a href="#">Business Strategy</a></li>
+                  <li><a href="#">Training Program</a></li>
+                  <li><a href="#">ESG Consulting</a></li>
+                  <li><a href="#">Development Hub</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6">
+              <div
+                class="footer-widget widget-nav-menu wow fadeInUp"
+                data-wow-delay=".5s"
+              >
+                <h5 class="title">Resources</h5>
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Team Member</a></li>
+                  <li><a href="#">Recognitions</a></li>
+                  <li>
+                    <a href="#">Careers <span class="badge">New</span></a>
+                  </li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6">
+              <div
+                class="footer-widget widget-subscribe wow fadeInUp"
+                data-wow-delay=".7s"
+              >
+                <h3 class="title">Subscribe to Our Newsletter.</h3>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter email"
+                    />
+                    <button type="submit"><i class="tji-plane"></i></button>
+                    <label for="agree"
+                      ><input id="agree" type="checkbox" />Agree to our
+                      <a href="#">Terms & Condition?</a></label
+                    >
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bg-shape-1">
-      <img src="assets/images/shape/pattern-2.svg" alt="">
-    </div>
-    <div class="bg-shape-2">
-      <img src="assets/images/shape/pattern-3.svg" alt="">
-    </div>
-  </footer>
+      <div class="tj-copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="copyright-content-area">
+                <div class="footer-contact">
+                  <ul>
+                    <li>
+                      <a href="tel:10095447818">
+                        <span class="icon"><i class="tji-phone-2"></i></span>
+                        <span class="text">+880 (18) 9605-9957</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@bexon.com">
+                        <span class="icon"><i class="tji-envelop-2"></i></span>
+                        <span class="text">info@znzit.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="social-links">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/" target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/" target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/" target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/" target="_blank"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="copyright-text">
+                  <p>
+                    &copy; <span id="currentYear"></span> <a
+                      href="index.html"
+                      
+                      >Zedandzed IT Services Limited</a
+                    >
+                    All right reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-shape-1">
+        <img src="assets/images/shape/pattern-2.svg" alt="" />
+      </div>
+      <div class="bg-shape-2">
+        <img src="assets/images/shape/pattern-3.svg" alt="" />
+      </div>
+    </footer>
+    <!-- end: Footer Section -->
   <!-- end: Footer Section -->
 
   <!-- JS here -->
