@@ -12345,10 +12345,9 @@ START: Breadcrumb CSS
   width: 100%;
   padding: 8px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
-  /* Optional blur behind text */
   backdrop-filter: blur(1px);
   text-align: center;
-  border-radius: 0 0 8px 8px; /* rounded only at bottom */
+  border-radius: 0 0 8px 8px; 
 }
 
 .caption-overlay p {
