@@ -12619,12 +12619,13 @@ START: Blog Details CSS
     columns: 1;
   }
 }
+
 .post-details-wrapper .blog-text .blog-video {
   position: relative;
   z-index: 1;
   border-radius: 12px;
   overflow: hidden;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 50px;
 }
 .post-details-wrapper .blog-text .blog-video .video-btn {
@@ -12746,6 +12747,205 @@ START: Blog Details CSS
     height: 35px;
   }
 }
+/* Careers Section */
+.tj-careers-section {
+  padding: 80px 0;
+  background: var(--tj-color-theme-bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.tj-careers-section .tj-careers {
+  background: var(--tj-color-common-white);
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.tj-careers-section .tj-careers:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tj-careers-section .tj-careers-icon {
+  font-size: 48px;
+  color: var(--tj-color-theme-primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tj-careers-section .tj-careers-tag {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.tj-careers-section .tj-careers-tag span {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--tj-color-common-white);
+  background: var(--tj-color-theme-primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.tj-careers-section .tj-careers-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+  color: var(--tj-color-heading-primary);
+}
+
+.tj-careers-section .tj-careers-title a {
+  color: var(--tj-color-heading-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tj-careers-section .tj-careers-title a:hover {
+  color: var(--tj-color-theme-primary);
+}
+
+.tj-careers-section .tj-careers-salary {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tj-color-text-body-3);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tj-careers-section .tj-careers-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.tj-careers-section .tj-careers-bottom .location {
+  font-size: 14px;
+  color: var(--tj-color-text-body-3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tj-careers-section .row.rg-30 {
+  row-gap: 30px;
+}
+
+.tj-careers-section .tj-careers-btn {
+  background: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-white);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tj-careers-section .tj-careers-btn:hover {
+  background: #993a3a; /* Slightly darker shade of your primary */
+  transform: translateY(-3px);
+}
+
+.tj-careers-section .tj-careers-btn .btn-icon i {
+  font-size: 14px;
+}
+
+.tj-careers-section .tj-pagination ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.tj-careers-section .tj-pagination ul li .page-numbers {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--tj-color-common-white);
+  color: var(--tj-color-text-body);
+  border: 1px solid var(--tj-color-border-1);
+  transition: all 0.3s ease;
+}
+
+.tj-careers-section .tj-pagination ul li .page-numbers.current {
+  background: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-white);
+  border-color: var(--tj-color-theme-primary);
+}
+
+.tj-careers-section .tj-pagination ul li .page-numbers:hover {
+  background: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-white);
+  border-color: var(--tj-color-theme-primary);
+}
+
+@media (max-width: 991px) {
+  .tj-careers-section .tj-careers-bottom {
+    justify-content: center;
+    gap: 10px;
+  }
+  .tj-careers-section .tj-careers-bottom .location {
+    text-align: center;
+  }
+}
+.job-info-widget {
+  background: var(--tj-color-bg-input); /* same as your input fields */
+  border: 1px solid var(--tj-color-border-1);
+  color: var(--tj-color-text-body);
+}
+
+.job-info-widget h4 {
+  color: var(--tj-color-heading-primary);
+}
+
+.job-info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--tj-color-border-1);
+}
+
+.job-info-list li:last-child {
+  border-bottom: none;
+}
+
+.job-info-list .label {
+  font-weight: 600;
+  color: var(--tj-color-heading-primary);
+}
+
+.job-info-list .value {
+  color: var(--tj-color-text-body);
+  text-align: right;
+}
+
+.job-info-list a {
+  color: var(--tj-color-heading-primary);
+  text-decoration: none;
+}
+
+.job-info-list a:hover {
+  text-decoration: underline;
+}
+.tj-careers-header {
+  background: var(--tj-color-theme-bg); /* same as form input background */
+  border: 2px dashed var(--tj-color-border-1); /* dashed border */
+  border-radius: 8px;
+}
+
 .blog-category-two .category-item .cate-text .degination {
   display: block;
   color: var(--tj-color-text-body-3);
