@@ -600,74 +600,81 @@
     <!-- end: Contact Top Section -->
 
     <!-- start: Contact Section -->
-    <section class="tj-contact-section-2 section-bottom-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contact-form wow fadeInUp" data-wow-delay=".1s">
-              <h3 class="title">Feel Free to Get in Touch or Visit our Location.</h3>
-              <form id="contact-form">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="text" name="cfName">
-                      <label class="cf-label">Full Name <span>*</span></label>
+  <section class="tj-contact-section-2 section-bottom-gap">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="contact-form wow fadeInUp" data-wow-delay=".1s">
+          <h3 class="title">Feel Free to Get in Touch or Visit our Location.</h3>
+          <form id="contact-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-input">
+                  <input type="text" name="cfName" required>
+                  <label class="cf-label">Full Name <span>*</span></label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-input">
+                  <input type="email" name="cfEmail" required>
+                  <label class="cf-label">Email Address <span>*</span></label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-input">
+                  <input type="tel" name="cfPhone" required>
+                  <label class="cf-label">Phone number <span>*</span></label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-input">
+                  <div class="tj-nice-select-box">
+                    <div class="tj-select">
+                      <select name="cfSubject" required>
+                        <option value="">Choose an option</option>
+                        <option value="Business Strategy">Business Strategy</option>
+                        <option value="Customer Experience">Customer Experience</option>
+                        <option value="Sustainability and ESG">Sustainability and ESG</option>
+                        <option value="Training and Development">Training and Development</option>
+                        <option value="IT Support & Maintenance">IT Support & Maintenance</option>
+                        <option value="Marketing Strategy">Marketing Strategy</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="email" name="cfEmail">
-                      <label class="cf-label">Email Address <span>*</span></label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <input type="tel" name="cfPhone">
-                      <label class="cf-label">Phone number <span>*</span></label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-input">
-                      <div class="tj-nice-select-box">
-                        <div class="tj-select">
-                          <select name="cfSubject">
-                            <option value="0">Chose a option</option>
-                            <option value="1">Business Strategy</option>
-                            <option value="2">Customer Experience</option>
-                            <option value="3">Sustainability and ESG</option>
-                            <option value="4">Training and Development</option>
-                            <option value="5">IT Support & Maintenance</option>
-                            <option value="6">Marketing Strategy</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="form-input message-input">
-                      <textarea name="cfMessage" id="message"></textarea>
-                      <label class="cf-label">Type message <span>*</span></label>
-                    </div>
-                  </div>
-                  <div class="submit-btn">
-                    <button class="tj-primary-btn" type="submit">
-                      <span class="btn-text"><span>Submit Now</span></span>
-                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                    </button>
                   </div>
                 </div>
-              </form>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-input message-input">
+                  <textarea name="cfMessage" id="message" required></textarea>
+                  <label class="cf-label">Type message <span>*</span></label>
+                </div>
+              </div>
+              <div class="submit-btn">
+                <button class="tj-primary-btn" type="submit">
+                  <span class="btn-text"><span>Submit Now</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="map-area wow fadeInUp" data-wow-delay=".3s">
-              <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=1cfNa8U7W3SwY4K-Xo5OST64FNL6Mv-TD&ehbc=2E312F"></iframe>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
-    </section>
+
+      <!-- Map -->
+      <div class="col-lg-6">
+        <div class="map-area wow fadeInUp" data-wow-delay=".3s">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1cfNa8U7W3SwY4K-Xo5OST64FNL6Mv-TD&ehbc=2E312F">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <!-- end: Contact Section -->
 
     <!-- start: Cta Section -->
@@ -870,6 +877,29 @@
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/meanmenu.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const serviceID = "YOUR_SERVICE_ID";  // 🔑 Replace with your Service ID
+    const templateID = "YOUR_TEMPLATE_ID"; // 🔑 Replace with your Template ID
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert("✅ Your message has been sent successfully!");
+        document.getElementById('contact-form').reset();
+      }, (err) => {
+        console.error("❌ Failed to send message:", err);
+        alert("❌ Something went wrong. Please try again.");
+      });
+  });
+</script>
 </body>
 
 </html>

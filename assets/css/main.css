@@ -12901,6 +12901,7 @@ START: Blog Details CSS
     text-align: center;
   }
 }
+
 .job-info-widget {
   background: var(--tj-color-bg-input); /* same as your input fields */
   border: 1px solid var(--tj-color-border-1);
