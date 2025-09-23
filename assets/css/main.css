@@ -1667,7 +1667,9 @@ START: Theme Footer CSS
 .footer-widget .footer-text p {
   margin-top: 28px;
   margin-bottom: 34px;
+  text-align: justify;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
@@ -6180,6 +6182,11 @@ START: Client CSS
     width: 100px;
   }
 }
+.client-slider-3 .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
 .client-slider-1::after {
   left: auto;
   right: 0;
@@ -12336,6 +12343,32 @@ START: Breadcrumb CSS
 .gallery-item {
   overflow: hidden;
   border-radius: 8px;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* only half width since duplicated */
+}
+
+.marquee-content .gallery-item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .caption-overlay {
